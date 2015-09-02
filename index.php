@@ -140,12 +140,17 @@
 		$('[data-toggle="tooltip"]').tooltip(); 
 
 
-		// 近場畫面
+		// the intro
+
+		var animation = {top:'-50px'};
+
 		setTimeout(function(){
 			$('.whole-page-wrap').addClass('open');
 			$('.spinning').fadeOut(400);
 			$('.main-currency').html(theCurrency);
-
+			// setTimeout(function(){
+			// 	$('.dialogue').animate(animation,800,'easeOutElastic');
+			// },500);
 		},1000);
 
 
