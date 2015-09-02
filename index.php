@@ -59,7 +59,7 @@
 
 		<!-- 輸入金額 -->
 		<div class="input-wrap content-wrap">
-			<h3><i class="fa fa-cog"></i> 匯率轉換工具</h3>
+			<h3><i class="fa fa-cog"></i> 轉換工具</h3>
 			<div class="input-sec">
 				<input id="MyTWD"type="number" placeholder="請輸入台幣金額" ng-model="TWD">
 			</div>
