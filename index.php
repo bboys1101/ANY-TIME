@@ -143,8 +143,8 @@
 		// 近場畫面
 		setTimeout(function(){
 			$('.whole-page-wrap').addClass('open');
-			$('.spinning').hide();
-			$('.upper-wrap .main-currency').html(theCurrency);
+			$('.spinning').fadeOut(400);
+			$('.main-currency').html(theCurrency);
 
 		},1000);
 
