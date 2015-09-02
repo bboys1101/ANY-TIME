@@ -66,7 +66,7 @@
 			<!-- <input id ="RATE" type="number" placeholder="匯率" ng-model="rate"> -->
 			<div class="down"><i class="fa fa-arrow-circle-down"></i></div>
 			<div class="input-sec">
-				<p>你將換到</p>
+				<p>您將換到</p>
 				<div class="totalNum dark-red"></div>
 			</div>
 		</div>
