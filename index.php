@@ -148,9 +148,9 @@
 			$('.whole-page-wrap').addClass('open');
 			$('.spinning').fadeOut(400);
 			$('.main-currency').html(theCurrency);
-			// setTimeout(function(){
-			// 	$('.dialogue').animate(animation,800,'easeOutElastic');
-			// },500);
+			setTimeout(function(){
+				$('.dialogue').animate(animation,800,'easeOutElastic');
+			},500);
 		},1000);
 
 
