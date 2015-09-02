@@ -70,7 +70,7 @@
 
 		<!-- Rate Exchanger-->
 		<div class="cont-sec cont-sec-l">
-			<h3><i class="fa fa-cog"></i> 匯率轉換工具</h3>
+			<h3><i class="fa fa-cog"></i> 22匯率轉換工具</h3>
 			<div class="input-sec">
 				<input id="MyTWD"type="number" placeholder="請輸入欲兌換台幣金額" ng-model="TWD">
 			</div>
