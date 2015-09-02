@@ -17,6 +17,7 @@
 	
 	<meta name="og:image" content="images/thumbnail.jpg">
 	<meta name="og:description" content="即時查詢最佳日幣匯率">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- 網站標題 & Favicon &  -->
 	<title>AN¥ TIME | Always Looking For Best Currency</title>
