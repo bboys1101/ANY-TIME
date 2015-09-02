@@ -1,0 +1,325 @@
+/*------------------------------------*\
+    Universal Setting
+\*------------------------------------*/
+
+body {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple LiGothic","微軟正黑體","Microsoft JhengHei";
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	
+}
+
+
+
+:focus { outline:none !important;}
+
+.clear-both{
+	clear: both;
+}
+
+.center{
+	text-align: center;
+}
+
+.cursor-item {
+	cursor: pointer;
+	opacity: 1.0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+			transition: all 0.3s;
+}
+
+.cursor-item:hover {
+	opacity: 0.7;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+			transition: all 0.3s;
+}
+
+.cursor-item-reverse {
+	cursor: pointer;
+	opacity: 0.7;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+			transition: all 0.3s;
+}
+
+.cursor-item-reverse:hover {
+	opacity: 1.0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+			transition: all 0.3s;
+}
+
+ul {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+
+
+/*------------------------------------*\
+    TextColor
+\*------------------------------------*/
+
+.dark-red{ color: #c00e0f;}
+.red{ color:#db2531;}
+.light-pink{ color: #f1e8e8;}
+.pink{ color: #db444f;}
+.y-brown{ color: #d5762c;}
+.brown{ color: #954b11;}
+.intro-brown{ color:#b26223;}
+.light-brown{ color: #c69c6d;}
+.dark-brown{ color:#6a3906;}
+
+
+
+
+/*------------------------------------*\
+    FontFace
+\*------------------------------------*/
+
+.entypo {
+	font-family: 'entypo';
+	font-size: 30px;
+}
+
+
+
+
+
+/*------------------------------------*\
+    index
+\*------------------------------------*/
+
+
+
+.whole-page-wrap {
+	width: 100%;
+	height: 720px;
+	/*background: url(../images/bg.jpg);*/
+	background-size: cover;
+	background-position: center;
+	padding-top: 50px;
+	-webkit-filter: blur(12px);    
+	   -moz-filter: blur(12px);    
+		 -o-filter: blur(12px);    
+		-ms-filter: blur(12px);    
+			filter: blur(12px);
+	-webkit-transition: all 0.8s;
+	   -moz-transition: all 0.8s;
+	     -o-transition: all 0.8s;
+			transition: all 0.8s;
+}
+
+.whole-page-wrap.open {
+	-webkit-filter: blur(0px);    
+	   -moz-filter: blur(0px);    
+		 -o-filter: blur(0px);    
+		-ms-filter: blur(0px);    
+			filter: blur(0px);
+	-webkit-transition: all 0.8s;
+	   -moz-transition: all 0.8s;
+	     -o-transition: all 0.8s;
+			transition: all 0.8s;
+}
+
+.logo-wrap {
+	position: relative;
+	margin-top: 30px;
+	text-align: center;	
+	/*background: #999;*/
+	width: 100%;
+	/*overflow: hidden;*/
+
+	/*background: #999;*/
+}
+
+.logo {
+	/*width: 300px;*/
+	/*font-family: 'Bangers', cursive;*/
+	/*font-size: 120px;*/
+	/*line-height: 1.0;*/
+	/*color: #000;*/
+	/*font-weight: normal;*/
+	/*background: red;*/
+	display: inline-block;
+	margin: 0px!important;
+	width: 400px;
+
+}
+
+
+.dialogue {
+	width: 200px;
+	position: absolute;
+	top: -50px;
+	right: 50%;
+	margin-right: -380px;
+}
+
+.upper-wrap {
+	/*text-align: left;*/
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background: url(../images/input-bg.png);
+
+	right: 50%;
+	margin-right: -420px;
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 4px solid #000;
+	/*width: 70%;*/
+	/*display: inline-block;*/
+	/*border-top: 5px solid #000;*/
+	/*text-align: center;*/
+	/*background: orange;*/
+	/*margin: 0px auto;*/
+	/*margin-top: 20px;*/
+}
+
+.upper-sec {
+	background: #f5f5f5;
+	border-radius: 6px;
+	display: inline-block;
+	padding: 20px 40px;
+	/*border: 1px solid #000;*/
+}
+
+.bank {
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+
+.main-currency {
+	font-family: 'Oswald', sans-serif;
+	font-size: 100px!important;
+	line-height: 100px;
+	font-weight: lighter;
+	margin: 30px auto;
+}
+
+.input-wrap {
+	width: 400px;
+	height: 400px;
+	background: url(../images/input-bg.png);
+	position: absolute;
+	left: 50%;
+	margin-left: -420px;
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 4px solid #000;
+}
+
+.input-wrap input {
+	background: url(../images/transparent.png);
+	border: 3px dashed #000;
+	/*border-bottom: 1px solid #000;*/
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0 0px 0px rgba(0,0,0,0.075);
+    box-shadow: inset 0 0px 0px rgba(0,0,0,0.075);
+    text-align: center;
+    height: 100px;
+    font-size: 20px;
+    line-height: 40px;
+    width: 300px;
+}
+
+.totalNum {
+	font-size: 50px!important;
+	margin-top: 20px;
+}
+
+.down {
+	font-size: 40px;
+	margin: 10px 0px;
+}
+
+.spinning {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.spinning i {
+	position: absolute;
+	font-size: 100px;
+	margin-left: -40px;
+	color: #000;
+	top: 40%;
+	/*top: 0px;
+	bottom: 0px;
+	margin: auto;
+	left: 0px;
+	right: 0px;*/
+}
+
+@media all and (max-width:1200px){
+
+
+}
+
+
+@media all and (max-width:990px){
+
+
+}
+
+
+@media all and (max-width:768px){
+
+
+}
+
+
+@media all and (max-width:640px){
+
+
+}
+
+@media all and (max-width:480px){
+
+
+}
+
+
+/*@media all and (max-width:120px){
+
+
+}
+
+
+@media all and (max-width:1024px){
+
+
+}
+
+
+@media all and (max-width:980px){
+
+
+}
+
+
+@media all and (max-width:720px){
+
+
+}
+*/
+
+
