@@ -69,9 +69,20 @@
 		
 
 		<!-- Rate Exchanger-->
+
+		<!-- 手機版才出現的區塊 -->
+		<div class="cont-sec cont-sec-r mobileShow">
+			<h3><i class="fa fa-bolt"></i> 即時匯率報價</h3>
+			<div class="upper-sec">
+				<h5>目前現在最划算的匯率是</h5>
+				<div class="main-currency dark-red" style="font-size:100px;">0.30</div>
+				<h5><i class="fa fa-sign-out"></i>來自 <span class="bank cursor-item" data-toggle="tooltip" title="點擊尋找離你最近的分行"></span></h5>
+			</div>
+		</div>
+
 		<div class="cont-sec cont-sec-l">
 
-			<h3><i class="fa fa-cog"></i> 11匯率轉換工具</h3>
+			<h3><i class="fa fa-cog"></i> 匯率轉換工具</h3>
 
 			<div class="input-sec">
 				<input id="MyTWD"type="number" placeholder="請輸入欲兌換台幣金額" ng-model="TWD">
@@ -85,7 +96,7 @@
 		</div>
 
 		
-		<div class="cont-sec cont-sec-r">
+		<div class="cont-sec cont-sec-r mobileBye">
 			<h3><i class="fa fa-bolt"></i> 即時匯率報價</h3>
 			<div class="upper-sec">
 				<h5>目前現在最划算的匯率是</h5>
