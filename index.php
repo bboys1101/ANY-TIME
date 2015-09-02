@@ -1,6 +1,29 @@
 <?php 
 
 	include("source/head.php"); 
+
+	// parse the Rate Exchange website
+	$url = "http://www.findrate.tw/JPY/#.VeQti52qqko";
+	$curl = curl_init($url);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+	$ret = curl_exec($curl);
+	$doc = new DOMDocument;
+	@$doc->loadHTML($ret);
+
+	// parse the td tag into an array
+	foreach($doc->getElementsByTagName('td') as $node)
+	{
+	    $array[] = $doc->saveHTML($node);
+	}
+
+	// get the specific items 
+	$subArray = array_slice($array,1,2);
+
+	// the best currency now
+	$currency = $subArray[1];
+	// the bank which provides the best currency now
+	$bank = $subArray[0];
+	
 	// include("source/head.php"); 
 	// $url = "http://www.taiwanrate.org/exchange_rate.php?c=JPY";
 	// $curl = curl_init($url);
@@ -16,28 +39,16 @@
 	// }
 	
 	// $subArray = array_slice($array,3,72);
-	$url = "http://www.findrate.tw/JPY/#.VeQti52qqko";
-	$curl = curl_init($url);
-	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-	$ret = curl_exec($curl);
-	// var_dump($ret);
-	$doc = new DOMDocument;
-	@$doc->loadHTML($ret);
-
-	foreach($doc->getElementsByTagName('td') as $node)
-	{
-	    $array[] = $doc->saveHTML($node);
-	}
+	
 
 	// echo $array;
 	// print_r($array);
 
 
-	$subArray = array_slice($array,1,2);
+	
 	// print_r($subArray);
 
-	$bank = $subArray[0];
-	$currency = $subArray[1];
+	
 	// echo $bank;
 	// echo $currency;
 
@@ -48,22 +59,22 @@
 
 <body>
 	<div class="whole-page-wrap">
-		<!-- header -->
+
+		<!-- logo -->
 		<div class="logo-wrap">
 			<img src="images/logo.png" class="logo" title="日幣匯率">
-			<!-- <h1 class="logo">AN<span class="dark-red">¥</span> TIME</h1> -->
 			<img src="images/dialogue.png" class="dialogue">
 		</div>
 
-		<!-- content -->
+		
 
-		<!-- 輸入金額 -->
-		<div class="input-wrap content-wrap">
+		<!-- Rate Exchanger-->
+		<div class="cont-sec cont-sec-l">
 			<h3><i class="fa fa-cog"></i> 匯率轉換工具</h3>
 			<div class="input-sec">
-				<input id="MyTWD"type="number" placeholder="請輸入台幣金額" ng-model="TWD">
+				<input id="MyTWD"type="number" placeholder="請輸入欲兌換台幣金額" ng-model="TWD">
 			</div>
-			<!-- <input id ="RATE" type="number" placeholder="匯率" ng-model="rate"> -->
+			
 			<div class="down"><i class="fa fa-arrow-circle-down"></i></div>
 			<div class="input-sec">
 				<p>您將換到</p>
@@ -72,7 +83,7 @@
 		</div>
 
 		
-		<div class="upper-wrap">
+		<div class="cont-sec cont-sec-r">
 			<h3><i class="fa fa-bolt"></i> 即時匯率報價</h3>
 			<div class="upper-sec">
 				<h5>目前現在最划算的匯率是</h5>
@@ -81,49 +92,18 @@
 			</div>
 			
 		</div>
-		
-		
-
 
 	</div>
+
+	<!-- loading -->
 	<div class="spinning">
 		<i class="fa fa-refresh fa-spin"></i>
 	</div>
-
-	<!-- 金額：<input type="text" ng-model="price" ng-init="price=300" /><br />
-    數量：<input type="number" ng-model="amt" ng-init="amt=1" style="display:none"/><br />
-    總金額：{{price * amt}} -->
-    <!-- <input type="text" >  -->
-    
-	
 
 </body>
 
 <script type="text/javascript">
 	
-	// myApp = angular.module('myApp',[]);
-	// myApp.controller('myController',function($scope,$http){
-	// 	$http.get('https://currency-api.appspot.com/api/JPY/TWD.jsonp')
-	// 	.success(function(response){
-	// 		$scope.myData = response;
-	// 	});
-
-	// });
-
-
-	// function MyController($scope, $http){   
-	//     $http({   
-	//         method: 'GET',   
-	//         url: 'https://currency-api.appspot.com/api/JPY/TWD.jsonp'  
-	//     }).success(function(data, status, headers, config) {   
-	//         $scope.school=data;   
-	           
-	//     }).error(function(data, status, headers, config) {   
-	           
-	//     });   
-
-	// }  
-
 
 	$(document).ready(function(){
 
