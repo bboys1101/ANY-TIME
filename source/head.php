@@ -20,7 +20,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- 網站標題 & Favicon &  -->
-	<title>AN¥ TIME | Always Looking For Best Currency</title>
+	<title>AN¥ TIME | Always Looking For Best Currency Rate</title>
 	<link rel="shortcut icon" href="images/favicon.png" >
 
 	<!-- jQuery -->

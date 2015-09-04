@@ -85,7 +85,7 @@
 			<h3><i class="fa fa-cog"></i> 匯率轉換工具</h3>
 
 			<div class="input-sec">
-				<input id="MyTWD"type="number" placeholder="請輸入欲兌換台幣金額" ng-model="TWD">
+				<input id="MyTWD" type="text" maxlength="10" placeholder="請輸入欲兌換台幣金額">
 			</div>
 			
 			<div class="down"><i class="fa fa-arrow-circle-down"></i></div>
@@ -271,16 +271,25 @@
 
 
 		   	
-		   var theVal = $(this).val();
+		    var theVal = $(this).val();
 
-		   if( theVal !== "" && theVal !== null){
-		   	
-			   var theTotal = parseInt(theVal / theCurrency)+'日幣';
+		    if( theVal !== "" && theVal !== null){
+		   		
+		    	var NanDect = isNaN(theVal);
 
-			   $('.totalNum').html(theTotal);
-		   }else{
+		    	if (NanDect) {
+		    		var error = '請輸入數字';
+		    		$('.totalNum').html(error);
+		    	}else {
+		    		var theTotal = parseInt(theVal / theCurrency)+'日幣';
+				    $('.totalNum').html(theTotal);
+		    	}
+				    
+
+
+		    }else{
 		   		$('.totalNum').html("");
-		   }
+		    }
 		   
 		   
 		 
